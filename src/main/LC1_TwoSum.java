@@ -1,7 +1,12 @@
+package main;
+
+// https://leetcode.com/problems/two-sum/
+
 import java.util.*;
 
-public class TwoSum {
-	public int[] twoSumV1(int[] nums, int target) {
+public class LC1_TwoSum {
+	
+	public static int[] twoSumV1(int[] nums, int target) {
         int[] result = new int[2];
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
@@ -15,7 +20,7 @@ public class TwoSum {
         throw new IllegalArgumentException("no solution");
     }
 	
-	public int[] twoSumV2(int[] nums, int target) {
+	public static int[] twoSumV2(int[] nums, int target) {
         int[] result = new int[2];
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0; i < nums.length; i++) {
