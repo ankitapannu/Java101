@@ -31,8 +31,8 @@ public class LC1431_KidsCandies {
     public static List<Boolean> kidsWithCandiesV2(int[] candies, int extraCandies) {
         List<Boolean> result = new ArrayList<Boolean>(candies.length);
         int max = findMaxValue(candies);
-        for (int i = 0; i < candies.length; i++) {
-            boolean b = (candies[i] + extraCandies >= max);
+        for (int candy : candies) {
+            boolean b = (candy + extraCandies >= max);
             result.add(b);
         }
         return result;
