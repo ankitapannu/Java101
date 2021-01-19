@@ -12,7 +12,7 @@ public class Stats {
 	
 	public void addEvent(int hour, int min) {
 		this.dayCount++;
-		int index = (hour * 60) + (min * 24);
+		int index = (hour * 60) + min;
 		this.timeCount[index] += 1; 
 	}
 	
